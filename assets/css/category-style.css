@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #ffffff;
+    --hover-color: #ffdd00;
+    --background-color: #f9f9f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: var(--primary-color);
+}
+
+.logo img {
+    height: 40px;
+}
+
+.back-btn a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    transition: color 0.3s;
+}
+
+.back-btn a:hover {
+    color: var(--hover-color);
+}
+
+.category-title {
+    text-align: center;
+    margin: 1em 0;
+    color: var(--primary-color);
+}
+
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+    padding: 1em;
+}
+
+.product-card {
+    background-color: var(--secondary-color);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.product-card h2 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.product-card p {
+    font-size: 1em;
+    color: var(--primary-color);
+    margin-bottom: 1em;
+}
+
+.buy-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: var(--hover-color);
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: #303030;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.footer-content ul.socials {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.footer-content ul.socials a {
+    color: white;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.footer-content ul.socials a:hover {
+    color: var(--hover-color);
+}
